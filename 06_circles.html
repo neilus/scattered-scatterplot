@@ -94,7 +94,11 @@
 			   })
 			   .attr("r", function(d) {
 				   return d.r;
-			   });
+			   })
+				.attr("fill", function(d) {
+					return d3.rgb(d.x,d.y,d.r);
+				})
+      ;
 			
 		</script>
 	</body>
